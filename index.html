@@ -750,16 +750,10 @@
             }
         }
 
-        /* Scroll reveal animations */
+        /* Sections always visible - no animation issues */
         .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+            opacity: 1 !important;
+            transform: translateY(0) !important;
         }
     </style>
 </head>
@@ -994,36 +988,29 @@
         <p>&copy; 2026 Anupama Mentreddi. All rights reserved. | Built with passion for data and design</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Smooth scroll reveal animation
-        function reveal() {
-            const reveals = document.querySelectorAll('.reveal');
-            
-            reveals.forEach(element => {
-                const windowHeight = window.innerHeight;
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    element.classList.add('active');
-                }
-            });
-        }
 
-        window.addEventListener('scroll', reveal);
-        reveal(); // Initial check
-
-        // Active nav link on scroll
+    <script>
+        // All sections are now visible by default - no reveal animation issues
+        
+        // Active nav link highlighting on scroll
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
             
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
                 if (scrollY >= sectionTop - 200) {
                     current = section.getAttribute('id');
                 }
             });
 
-            document.quer
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
