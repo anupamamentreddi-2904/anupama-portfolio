@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anupama Mentreddi - BI Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -43,7 +46,7 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
         }
 
         nav .container {
@@ -133,8 +136,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            50% { transform: translate(-50px, 50px) rotate(5deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-50px, 50px) rotate(5deg);
+            }
         }
 
         .hero .container {
@@ -170,6 +180,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -237,7 +248,7 @@
             height: 450px;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
 
         .hero-image-container img {
@@ -349,13 +360,13 @@
             background: white;
             padding: 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
         }
 
         .skill-category:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
         }
 
         .skill-category h3 {
@@ -424,7 +435,7 @@
             background: var(--light-bg);
             padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
         .experience-details h3 {
@@ -475,7 +486,7 @@
             background: linear-gradient(135deg, #2D5F5D 0%, #1e4340 100%);
             border-radius: 20px;
             padding: 3rem 2rem;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
 
@@ -491,8 +502,13 @@
         }
 
         @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .skills-visual-title {
@@ -521,18 +537,36 @@
             animation: fadeInScale 0.8s ease-out backwards;
         }
 
-        .skill-circle:nth-child(1) { animation-delay: 0.1s; }
-        .skill-circle:nth-child(2) { animation-delay: 0.2s; }
-        .skill-circle:nth-child(3) { animation-delay: 0.3s; }
-        .skill-circle:nth-child(4) { animation-delay: 0.4s; }
-        .skill-circle:nth-child(5) { animation-delay: 0.5s; }
-        .skill-circle:nth-child(6) { animation-delay: 0.6s; }
+        .skill-circle:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .skill-circle:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .skill-circle:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .skill-circle:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .skill-circle:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .skill-circle:nth-child(6) {
+            animation-delay: 0.6s;
+        }
 
         @keyframes fadeInScale {
             from {
                 opacity: 0;
                 transform: scale(0.5);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1);
@@ -569,8 +603,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .skill-circle span {
@@ -627,14 +668,14 @@
             background: white;
             padding: 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             border-left: 5px solid var(--secondary-color);
         }
 
         .education-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
         }
 
         .education-card h3 {
@@ -688,14 +729,14 @@
             align-items: center;
             gap: 1rem;
             padding: 2rem;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
             transition: all 0.3s ease;
             min-width: 220px;
         }
 
         .contact-item:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             transform: translateY(-5px);
         }
 
@@ -738,7 +779,7 @@
         .social-link {
             width: 50px;
             height: 50px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -778,7 +819,7 @@
                 flex-direction: column;
                 gap: 0;
                 padding: 1rem 0;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
                 transform: translateY(-100%);
                 opacity: 0;
                 pointer-events: none;
@@ -793,7 +834,7 @@
 
             nav ul li {
                 padding: 1rem 2rem;
-                border-bottom: 1px solid rgba(0,0,0,0.05);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             }
 
             .hero .container {
@@ -907,6 +948,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -936,15 +978,19 @@
                     Hello, I'm
                     <span class="highlight">Anupama Mentreddi</span>
                 </h1>
-                <p>Associate BI Developer | Power BI Expert | Data Visualization Specialist | Transforming data into actionable insights</p>
+                <p>Associate BI Developer | Power BI Expert | Data Visualization Specialist | Transforming data into
+                    actionable insights</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                    <a href="../Desktop/Anupama_AssociateBI.pdf" class="btn btn-secondary" download>Download Resume</a>
                     <a href="#experience" class="btn btn-secondary">View My Work</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-image-container">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Visualization" onerror="this.src='https://source.unsplash.com/800x600/?data,analytics,charts'">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                        alt="Data Visualization"
+                        onerror="this.src='https://source.unsplash.com/800x600/?data,analytics,charts'">
                 </div>
             </div>
         </div>
@@ -956,14 +1002,18 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Business Intelligence professional with expertise in Power BI development and data visualization. Currently pursuing my M.Tech in Artificial Intelligence, I combine technical prowess with creative problem-solving to deliver impactful BI solutions.</p>
-                    <p>My journey in tech is driven by curiosity and a commitment to continuous learning. I specialize in transforming complex data into compelling visual stories that drive business decisions.</p>
-                    <p>As a quick learner with strong communication skills, I thrive in collaborative environments where I can contribute to meaningful solutions while growing professionally.</p>
+                    <p>I'm a passionate Business Intelligence professional with expertise in Power BI development and
+                        data visualization. Currently pursuing my M.Tech in Artificial Intelligence, I combine technical
+                        prowess with creative problem-solving to deliver impactful BI solutions.</p>
+                    <p>My journey in tech is driven by curiosity and a commitment to continuous learning. I specialize
+                        in transforming complex data into compelling visual stories that drive business decisions.</p>
+                    <p>As a quick learner with strong communication skills, I thrive in collaborative environments where
+                        I can contribute to meaningful solutions while growing professionally.</p>
                 </div>
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Months Experience</span>
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">15+</span>
@@ -1166,23 +1216,21 @@
                     <a href="mailto:anuists19@gmail.com">anuists19@gmail.com</a>
                 </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <a href="tel:+919177900606">+91-9177900606</a>
-                </div>
+
 
                 <div class="contact-item">
                     <div class="contact-icon">💼</div>
                     <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/anupama-mentreddi-46811923b" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                    <a href="https://www.linkedin.com/in/anupama-mentreddi-46811923b" target="_blank"
+                        rel="noopener noreferrer">Connect with me</a>
                 </div>
             </div>
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/anupama-mentreddi-46811923b" target="_blank" rel="noopener noreferrer" class="social-link">💼</a>
+                <a href="https://www.linkedin.com/in/anupama-mentreddi-46811923b" target="_blank"
+                    rel="noopener noreferrer" class="social-link">💼</a>
                 <a href="mailto:anuists19@gmail.com" class="social-link">📧</a>
-                <a href="tel:+919177900606" class="social-link">📱</a>
+
             </div>
         </div>
     </section>
@@ -1208,7 +1256,7 @@
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 if (scrollY >= sectionTop - 200) {
@@ -1229,11 +1277,12 @@
             const nav = document.querySelector('nav');
             const navMenu = document.getElementById('navMenu');
             const navToggle = document.querySelector('.nav-toggle');
-            
+
             if (!nav.contains(e.target) && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
             }
         });
     </script>
 </body>
+
 </html>
